@@ -32,12 +32,10 @@ The project is built upon the **VinDr-Mammo** dataset. We integrated two special
 | :---: | :---: |
 | ![Confusion Matrix](assets/figure_1_confusion_matrix.png) | ![ROC Curve](assets/figure_2_roc_curve.png) |
 
-### Clinical Workflow Impact (Simulation)
-Based on a screening population with 1% cancer prevalence, the model can **reduce the workload by approximately 67%** by safely filtering normal exams.
-
-| Table 1: Performance Metrics | Table 2: Clinical Impact |
-| :---: | :---: |
-| ![Performance Table](assets/table_1_classification_report.png) | ![Impact Table](assets/table_2_clinical_simulation.png) |
+### Performance Summary
+| Table 1: Performance Metrics |
+| :---: |
+| ![Performance Table](assets/table_1_classification_report.png) |
 
 ## 🛠️ Installation & Usage
 1. **Clone the repository:**
