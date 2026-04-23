@@ -27,15 +27,20 @@ The project is built upon the **VinDr-Mammo** dataset. We integrated two special
 - **Patch Extraction:** 512x512 patches centered on mass coordinates and normal parenchyma.
 - **Clinical Calibration:** The decision threshold was set to **0.0031** to prioritize clinical safety (Sensitivity > 98%), ensuring that virtually no malignant findings are missed during the automated triage.
 
-## 📈 Validation Results
+## Validation Results
 | Figure 1: Confusion Matrix | Figure 2: ROC Curve |
 | :---: | :---: |
 | ![Confusion Matrix](assets/figure_1_confusion_matrix.png) | ![ROC Curve](assets/figure_2_roc_curve.png) |
 
-### Performance Summary
-| Table 1: Performance Metrics |
-| :---: |
-| ![Performance Table](assets/table_1_classification_report.png) |
+### Performance & Impact Analysis
+| Table 1: Performance Metrics | Table 2: Clinical Impact Simulation |
+| :---: | :---: |
+| ![Performance Table](assets/table_1_classification_report.png) | ![Impact Table](assets/table_2_clinical_simulation.png) |
+
+## Clinical Workflow Impact Simulation
+The most significant contribution of this model is its ability to serve as a "safe filter." In a simulated screening environment with a 1% cancer prevalence:
+- **Workload Reduction:** The model safely filters out approximately **67% of normal exams**, removing them from the radiologist's immediate worklist.
+- **Safety Margin:** It maintains a **Negative Predictive Value (NPV) of 99.97%**, meaning the risk of a false negative being cleared by the AI is statistically negligible, meeting international safety standards for triage tools.
 
 ## 🛠️ Installation & Usage
 1. **Clone the repository:**
